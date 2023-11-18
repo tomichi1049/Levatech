@@ -19,8 +19,7 @@
             @endforeach
         </div>
         <div class='paginate'>
-            {{$posts->links()}}
-            <!--11件目以降を表示-->
+            {{ $posts->links() }}
         </div>
     </body>
 </html>
