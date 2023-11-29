@@ -20,4 +20,4 @@ Route::get('/posts/{post}', [PostController::class ,'show']);
 
 Route::post('/posts', [PostController::class, 'store']);
 
-Route::delete('/posts/{post}',[PostController::class,'delete']);
+Route::delete('/posts/{post}', [PostController::class,'delete']);
