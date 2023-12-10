@@ -28,6 +28,9 @@
         <div class='paginate'>
             {{ $posts->links() }}
         </div>
+        <div class='auth'>
+            {{ Auth::user()->name }}
+        </div>
         <script>
             function deletePost(id) {
                 'use strict'
