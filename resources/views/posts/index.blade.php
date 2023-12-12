@@ -40,5 +40,15 @@
                 }
             }
         </script>
+        <div>
+            <!--質問データのタイトルを表示、全データの要素が処理されるまで繰り返す-->
+            @foreach($questions as $question)
+            <div>
+                <a href="https://teratail.com/questions/{{ $question['id'] }}">
+                    {{ $question['title'] }}
+                </a>
+            </div>
+            @endforeach
+        </div>
     </body>
 </html>
